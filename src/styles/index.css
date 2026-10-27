@@ -8,10 +8,17 @@
     --font-body-text: "Roboto", ui-sans-serif, system-ui, sans-serif;
     --font-title-text: "Idiqlat", ui-serif, Georgia, serif;
 
+    /* Font size */
+    --font-size-paragraph: 22px;
+
+    /* spaces */
+    --space-bottom: 120px;
+
     /* Colors */
     --color-brand-blue: #0F3D9C;
     --color-brand-dark: #0B1B3A;
     --color-brand-border: #E2E8F0;
+    --color-brand-gray: #475569;
 }
 
 @layer base {

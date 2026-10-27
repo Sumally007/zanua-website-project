@@ -6,7 +6,7 @@ const Navigation = () => {
     return (
         <div className="w-full h-[127px] border-b border-brand-border">
             <div className="flex items-center justify-between h-full mx-[75px]">
-                <img className="h-[45px] w-[205px]" src={logo} alt="Zanua Logo" />
+                <img className="h-[45px] w-[205px] hover:cursor-pointer" src={logo} alt="Zanua Logo" />
                 <div>
                     <NavLinks />
                 </div>

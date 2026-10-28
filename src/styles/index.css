@@ -20,6 +20,12 @@
     --color-brand-border: #E2E8F0;
     --color-brand-gray: #475569;
     --color-lightBlue: #E8EEFA;
+    --color-lightTeal: #E3F5F3;
+    --color-lightYellow: #FFF6D6;
+
+    /* Radius */
+    --radius-card-lg: 80px;
+    --radius-card-sm: 40px;
 }
 
 @layer base {

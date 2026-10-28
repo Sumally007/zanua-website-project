@@ -6,7 +6,7 @@ const Features = () => {
         <section id="features" className="flex flex-col items-center justify-center mb-[var(--space-bottom)] px-[106px]">
             <div className="flex items-center justify-between w-full mb-[97px]">
                 <h2 className="text-[52px] text-brand-dark leading-[120%]">Everything you need <br></br> for your Business</h2>
-                <p className="text-brand-gray text-(length:--font-size-paragraph) leading-[150%] self-end">Powerful modules that work together to keep your <br></br> stock accurate</p>
+                <p className="text-brand-gray text-(length:--font-size-paragraph) leading-[150%] self-start">Powerful modules that work together to keep your <br></br> stock accurate</p>
             </div>
             <div className="flex flex-col gap-[80px] w-full">
                 {features.map(({ id, ...feature }) => (

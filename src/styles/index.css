@@ -24,6 +24,7 @@
     --color-lightYellow: #FFF6D6;
 
     /* Radius */
+    --radius-containerCard: 84px;
     --radius-card-lg: 80px;
     --radius-card-sm: 40px;
 }

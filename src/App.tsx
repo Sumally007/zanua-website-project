@@ -1,3 +1,4 @@
+import Budges from './components/Budges';
 import Hero from './components/Hero';
 import Navigation from './components/Navigation';
 
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <Navigation />
       <Hero />
+      <Budges />
     </div>
   )
 }

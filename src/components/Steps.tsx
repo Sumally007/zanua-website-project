@@ -13,18 +13,18 @@ const Steps = () => {
                 <p className="text-brand-gray text-(length:--font-size-paragraph) leading-[150%] self-start">Running Zanua ERP is a seamless, guided experience <br></br> designed to streamline your business operations and <br></br> maximize profitability.</p>
             </div>
 
-            <div className="grid grid-cols-1 justify-items-stretch lg:grid-cols-[1fr_430px_1fr] mb-[97px] w-full">
-                <div className="order-2 flex flex-col justify-between lg:order-1 mt-[40px] mb-[40px]">
+            <div className="flex justify-between items-center gap-[40px] w-full mb-[120px]">
+                <div className="flex flex-col justify-between items-center gap-6">
                     {leftSteps.map((step) => (
                         <StepCard key={step.number} {...step} />
                     ))}
                 </div>
 
-                <div className="order-1 h-[700px] overflow-hidden rounded-[40px] lg:order-2">
-                    <img src={stepImage} alt="step-image" className='h-[700px] w-full' />
+                <div className="overflow-hidden rounded-[40px]">
+                    <img src={stepImage} alt="step-image" className='h-[724.25px] w-[438.57px]' />
                 </div>
 
-                <div className="order-3 flex flex-col justify-between justify-self-end mt-[40px] mb-[40px]">
+                <div className="flex flex-col justify-between items-center gap-6">
                     {rightSteps.map((step) => (
                         <StepCard key={step.number} {...step} />
                     ))}

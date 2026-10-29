@@ -33,10 +33,10 @@ export const steps: Step[] = [
 
 const StepCard = ({ number, title, description }: Step) => {
     return (
-        <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 w-[350.12px]">
-            <h4 className="text-[24px] text-brand-blue">{number}</h4>
-            <h4 className="text-[24px] text-brand-dark">{title}</h4>
-            <p className="text-(length:--font-size-paragraph) text-brand-gray">{description}</p>
+        <div className="rounded-2xl border border-[#E2E8F0] bg-white p-[19px] max-w-[350.12px]">
+            <h4 className="text-[24px] text-brand-blue mb-[36px]">{number}</h4>
+            <h4 className="text-[24px] mb-[24px] text-brand-dark">{title}</h4>
+            <p className="text-(length:--font-size-paragraph) text-brand-gray leading-[138%]">{description}</p>
         </div>
     )
 }

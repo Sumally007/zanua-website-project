@@ -2,8 +2,6 @@ import React from 'react';
 import profilePicture from '@/assets/images/userProfilePicture.png';
 import logoImage from '@/assets/images/userLogoImage.png';
 import displayImage from '@/assets/images/displayImage.png'
-// import purchasingImage from '@/assets/images/featureImage.png'
-// import salesImage from '@/assets/images/featureImage.png'
 
 
 interface TestimonialCardProps {
@@ -29,8 +27,6 @@ export const testimonialData: TestimonialCardProps[] = [
 
 
 // card component
-
-
 const TestimanialCard: React.FC<TestimonialCardProps> = ({ logoSrc, comments, userName, userRole, profilePicture, displayImage }) => {
     return (
         <div className={`card flex flex-col items-center justify-between md:flex-row gap-10 rounded-tl-card-lg rounded-br-card-lg rounded-tr-card-sm rounded-bl-card-sm bg-[#E8EEFA] w-[1284px]`}>

@@ -15,8 +15,8 @@ const Steps = () => {
 
             <div className="flex justify-between items-center gap-[40px] w-full mb-[120px]">
                 <div className="flex flex-col justify-between items-center gap-6">
-                    {leftSteps.map((step) => (
-                        <StepCard key={step.number} {...step} />
+                    {leftSteps.map((step, index) => (
+                        <StepCard key={index} {...step} />
                     ))}
                 </div>
 
@@ -25,8 +25,8 @@ const Steps = () => {
                 </div>
 
                 <div className="flex flex-col justify-between items-center gap-6">
-                    {rightSteps.map((step) => (
-                        <StepCard key={step.number} {...step} />
+                    {rightSteps.map((step, index) => (
+                        <StepCard key={index} {...step} />
                     ))}
                 </div>
             </div>

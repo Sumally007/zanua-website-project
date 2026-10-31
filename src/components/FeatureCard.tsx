@@ -5,7 +5,6 @@ import purchasingImage from '@/assets/images/featureImage.png'
 import salesImage from '@/assets/images/featureImage.png'
 
 export interface Feature {
-    id: string
     title: string
     paragraphs: string[]
     image: string
@@ -17,7 +16,6 @@ export interface Feature {
 
 export const features: Feature[] = [
     {
-        id: 'inventory',
         title: 'Inventory management',
         paragraphs: [
             'Track your inventory in real time across products, materials, and multiple locations.',
@@ -29,7 +27,6 @@ export const features: Feature[] = [
         bgClass: 'bg-lightBlue',
     },
     {
-        id: 'purchasing',
         title: 'Purchasing',
         paragraphs: [
             'Manage purchase orders and supplier relationships from one central place.',
@@ -41,7 +38,6 @@ export const features: Feature[] = [
         bgClass: 'bg-lightTeal',
     },
     {
-        id: 'sales',
         title: 'Sales Management',
         paragraphs: [
             'Manage quotations, orders, and customers on one connected platform.',
@@ -54,14 +50,14 @@ export const features: Feature[] = [
     },
 ]
 
-const FeatureCard = ({
+const FeatureCard: React.FC<Feature> = ({
     title,
     paragraphs,
     image,
     imageAlt,
     bgClass,
     href = '#',
-}: Omit<Feature, 'id'>) => {
+}) => {
     return (
         <div
             className={`card flex flex-col items-center justify-between gap-10 px-6 py-10 lg:flex-row lg:px-[57px] lg:py-[97px] ${bgClass} rounded-tl-card-lg rounded-br-card-lg rounded-tr-card-sm rounded-bl-card-sm`}
@@ -69,9 +65,9 @@ const FeatureCard = ({
             <div className="flex w-full flex-col lg:w-[490px]">
                 <h3 className="mb-[47px] text-[42px]">{title}</h3>
 
-                {paragraphs.map((text) => (
+                {paragraphs.map((text, index) => (
                     <p
-                        key={text}
+                        key={index}
                         className="mb-[40px] text-brand-gray text-(length:--font-size-paragraph) leading-[148%]"
                     >
                         {text}

@@ -9,8 +9,8 @@ const Features = () => {
                 <p className="text-brand-gray text-(length:--font-size-paragraph) leading-[150%] self-start">Powerful modules that work together to keep your <br></br> stock accurate</p>
             </div>
             <div className="flex flex-col gap-[80px] w-full">
-                {features.map(({ id, ...feature }) => (
-                    <FeatureCard key={id} {...feature} />
+                {features.map((features, index) => (
+                    <FeatureCard key={index} {...features} />
                 ))}
                 {/* <div className="card flex items-center justify-between py-[97px] px-[57px] bg-lightBlue rounded-tl-card-lg rounded-br-card-lg rounded-tr-card-sm rounded-bl-card-sm">
                     <div className="flex flex-col w-[490px]">

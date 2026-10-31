@@ -9,12 +9,16 @@
     --font-title-text: "Idiqlat", ui-serif, Georgia, serif;
 
     /* Font size */
+    --font-size-heading2: 52px;
+    --font-size-headingPrice: 60px;
     --font-size-paragraph: 22px;
+    --font-size-priceList: 18px;
 
     /* spaces */
     --space-bottom: 120px;
 
     /* Colors */
+    --color-brand-white: #FFFFFF;
     --color-brand-blue: #0F3D9C;
     --color-brand-dark: #0B1B3A;
     --color-brand-border: #E2E8F0;
@@ -25,6 +29,7 @@
 
     /* Radius */
     --radius-containerCard: 84px;
+    --radius-card-price: 30px;
     --radius-card-lg: 80px;
     --radius-card-sm: 40px;
 }

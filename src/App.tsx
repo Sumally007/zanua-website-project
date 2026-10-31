@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Navigation from './components/Navigation';
 import Steps from './components/Steps.tsx';
 import Testimonial from './components/Testimonial.tsx';
+import Pricing from './components/Pricing.tsx';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Features />
       <Steps />
       <Testimonial />
+      <Pricing />
     </div>
   )
 }

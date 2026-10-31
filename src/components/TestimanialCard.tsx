@@ -29,8 +29,8 @@ export const testimonialData: TestimonialCardProps[] = [
 // card component
 const TestimanialCard: React.FC<TestimonialCardProps> = ({ logoSrc, comments, userName, userRole, profilePicture, displayImage }) => {
     return (
-        <div className={`card flex flex-col items-center justify-between md:flex-row gap-10 rounded-tl-card-lg rounded-br-card-lg rounded-tr-card-sm rounded-bl-card-sm bg-[#E8EEFA] w-[1284px]`}>
-            <div className="flex w-full flex-col lg:w-[490px] pl-6 lg:pl-[57px]">
+        <div className={`card flex justify-between gap-10 rounded-tl-card-lg rounded-br-card-lg rounded-tr-card-sm rounded-bl-card-sm bg-[#E8EEFA] w-full`}>
+            <div className="flex-1 flex-col py-[67px] pl-[50px]">
                 <img src={logoSrc} alt="" className='w-[130px] h-[72px] mb-[62px]' />
                 <p className='mb-[62px] text-[36px] w-[466px]'>{comments}</p>
                 <div className='flex items-center gap-[28px]'>
@@ -41,8 +41,8 @@ const TestimanialCard: React.FC<TestimonialCardProps> = ({ logoSrc, comments, us
                     </div>
                 </div>
             </div>
-            <div>
-                <img src={displayImage} alt="" className='w-[615px] h-full object-cover' />
+            <div className="flex-1 overflow-hidden">
+                <img src={displayImage} alt="" className='w-full h-full' />
             </div>
         </div>
     )

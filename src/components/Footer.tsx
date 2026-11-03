@@ -1,47 +1,63 @@
-import NavLinks from "./NavLinks";
-import { CiLinkedin } from "react-icons/ci";
-import { FaInstagram } from "react-icons/fa";
-import { IoLogoFacebook } from "react-icons/io";
-import { FaWhatsapp } from "react-icons/fa";
+import NavLinks from './NavLinks'
+import {
+    AiOutlineLinkedin,
+    AiOutlineFacebook,
+    AiOutlineWhatsApp,
+    AiOutlineInstagram,
+} from 'react-icons/ai'
 
+const socials = [
+    { label: 'LinkedIn', href: '#', icon: AiOutlineLinkedin },
+    { label: 'Facebook', href: '#', icon: AiOutlineFacebook },
+    { label: 'WhatsApp', href: '#', icon: AiOutlineWhatsApp },
+    { label: 'Instagram', href: '#', icon: AiOutlineInstagram },
+]
 
 const Footer = () => {
     return (
-        <section className="bg-brand-blue px-[106px] py-[100px] *:text-white">
-            <div className="flex flex-col">
-                <div className="flex items-center justify-between">
-                    <div>
-                        <NavLinks />
-                    </div>
-                    <div className="flex items-center gap-6">
-                        <ul className="flex items-center gap-6">
-                            <li>
-                                <CiLinkedin size={30} />
-                            </li>
-                            <li>
-                                <IoLogoFacebook size={30} />
-                            </li>
-                            <li>
-                                <FaWhatsapp size={30} />
-                            </li>
-                            <li>
-                                <FaInstagram size={30} />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <hr className={`mt-6 border-[#2A4A8F]`} />
-                <h2 className="font-title-text h-[203px] text-[433.38px] leading-[0.39] tracking-normal whitespace-nowrap text-white select-none">
-                    zanua
-                </h2>
-                <hr className={`mt-6 border-[#2A4A8F]`} />
-                <div className="flex items-center justify-between">
-                    <p className="text-[20px]">© 2026 Zanua Technologies. All rights reserved.</p>
-                    <p className="text-[20px]">Developed by Ismail Mbarouk.</p>
-                </div>
+        <footer className="rounded-t-[60px] bg-brand-blue px-6 pt-12 pb-10 text-white lg:px-[75px]">
+
+            <div className="flex flex-col items-start justify-between gap-8 pb-8 md:flex-row md:items-center">
+                <NavLinks
+                    variant="light"
+                    className="flex flex-wrap items-center gap-x-[80px] gap-y-4 text-[18px]"
+                />
+
+                <ul className="flex items-center gap-8">
+                    {socials.map(({ label, href, icon: Icon }) => (
+                        <li key={label}>
+                            <a
+                                href={href}
+                                aria-label={label}
+                                className="block transition-opacity hover:opacity-70"
+                            >
+                                <Icon className="h-[32px] w-[32px]" />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
             </div>
-        </section>
+
+            <hr className="border-white/15" />
+
+
+            <div className="@container w-full overflow-hidden py-6">
+                <p
+                    aria-hidden="true"
+                    className="font-title-text select-none whitespace-nowrap text-[33.4cqw] leading-[0.7] text-white"
+                >
+                    zanua
+                </p>
+            </div>
+
+            <hr className="border-white/15" />
+
+            <div className="flex flex-col gap-3 pt-10 text-[18px] md:flex-row md:items-center md:justify-between">
+                <p>© 2026 Zanua Technologies. All rights reserved.</p>
+                <p>Developed by Ismail Mbarouk.</p>
+            </div>
+        </footer>
     )
 }
 
-export default Footer;
+export default Footer

@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Steps from './components/Steps.tsx';
 import Testimonial from './components/Testimonial.tsx';
 import Pricing from './components/Pricing.tsx';
+import CallToAciton from './components/CallToAciton.tsx';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Steps />
       <Testimonial />
       <Pricing />
+      <CallToAciton />
     </div>
   )
 }

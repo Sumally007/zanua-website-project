@@ -15,7 +15,7 @@ const socials = [
 
 const Footer = () => {
     return (
-        <footer className="rounded-t-[60px] bg-brand-blue px-6 pt-12 pb-10 text-white lg:px-[75px]">
+        <footer className="rounded-t-[60px] bg-brand-blue px-6 pt-12 pb-10 text-brand-white lg:px-[75px]">
 
             <div className="flex flex-col items-start justify-between gap-8 pb-8 md:flex-row md:items-center">
                 <NavLinks
@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="@container w-full overflow-hidden py-6">
                 <p
                     aria-hidden="true"
-                    className="font-title-text select-none whitespace-nowrap text-[33.4cqw] leading-[0.7] text-white"
+                    className="font-title-text select-none whitespace-nowrap text-[33.4cqw] leading-[0.7] text-brand-white"
                 >
                     zanua
                 </p>

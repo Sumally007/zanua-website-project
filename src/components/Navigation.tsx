@@ -1,17 +1,48 @@
-import logo from '@/assets/images/zanua-logo.png'
+import logo from '@/assets/images/zanua-logo.png';
+import mobileLogo from '@/assets/images/mobile-zanua-logo.png';
 import Button from './Button';
 import NavLinks from './NavLinks';
+import MenuButton from './ManuButton';
+import { useState } from 'react';
 
 const Navigation = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <div className="w-full h-[127px] border-b border-brand-border">
-            <div className="flex items-center justify-between h-full mx-[75px]">
-                <img className="h-[45px] w-[205px] hover:cursor-pointer" src={logo} alt="Zanua Logo" />
-                <div>
+        <div className="relative w-full h-[127px] border-b border-brand-border">
+            <div className="flex items-center justify-between h-full xl:mx-[75px] mx-[2.5rem]">
+                <img
+                    src={mobileLogo}
+                    alt="Zanua Logo"
+                    className="block h-[40px] w-auto xl:hidden"
+                />
+                <img
+                    src={logo}
+                    alt="Zanua Logo"
+                    className="hidden h-[45px] w-[205px] xl:block hover:cursor-pointer"
+                />
+                <div className="mx-10 hidden xl:block">
                     <NavLinks />
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="hidden xl:block">
                     <Button>Request demo</Button>
+                </div>
+
+                <MenuButton
+                    isOpen={isOpen}
+                    onClick={() => setIsOpen((prev) => !prev)}
+                    className="xl:hidden"
+                />
+            </div>
+
+            {/* Menyu ya mobile */}
+            <div
+                className={`absolute top-full left-0 z-50 w-full overflow-hidden bg-white transition-all duration-300 xl:hidden ${isOpen ? 'max-h-screen border-b border-brand-border' : 'max-h-0'
+                    }`}
+            >
+                <div className="flex flex-col gap-6 px-[2.5rem] py-6">
+                    <NavLinks className="flex flex-col gap-6 text-[18px]" />
+                    <Button className="w-full">Request demo</Button>
                 </div>
             </div>
         </div>

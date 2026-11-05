@@ -10,6 +10,7 @@ interface NavLinksProps {
     items?: NavItem[];
     className?: string;
     variant?: 'dark' | 'light';
+    onItemClick?: () => void;
 }
 
 const defaultNavItems: NavItem[] = [
@@ -34,6 +35,7 @@ const NavLinks: React.FC<NavLinksProps> = ({
     items = defaultNavItems,
     className = 'flex items-center gap-[85px] text-[18px]',
     variant = 'dark',
+    onItemClick,
 }) => {
     return (
         <ul className={className}>
@@ -43,7 +45,9 @@ const NavLinks: React.FC<NavLinksProps> = ({
                     className={`font-medium cursor-pointer transition-colors ${item.active ? variants[variant].active : variants[variant].link
                         }`}
                 >
-                    <a href={item.href}>{item.label}</a>
+                    <a href={item.href} onClick={onItemClick}>
+                        {item.label}
+                    </a>
                 </li>
             ))}
         </ul>

@@ -37,11 +37,11 @@ const Navigation = () => {
 
             {/* Menyu ya mobile */}
             <div
-                className={`absolute top-full left-0 z-50 w-full overflow-hidden bg-white transition-all duration-300 xl:hidden ${isOpen ? 'max-h-screen border-b border-brand-border' : 'max-h-0'
+                className={`absolute top-full left-0 z-50 w-full overflow-hidden bg-white transition-all duration-300 xl:hidden ${isOpen ? 'h-[500px] border-b border-brand-border' : 'max-h-0'
                     }`}
             >
-                <div className="flex flex-col gap-6 px-[2.5rem] py-6">
-                    <NavLinks className="flex flex-col gap-6 text-[18px]" />
+                <div className="flex flex-col justify-between px-[2.5rem] h-full pb-[2.5rem]">
+                    <NavLinks className="flex flex-col gap-6 text-[20px]" />
                     <Button className="w-full">Request demo</Button>
                 </div>
             </div>

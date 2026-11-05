@@ -15,7 +15,7 @@ const socials = [
 
 const Footer = () => {
     return (
-        <footer className="rounded-t-[60px] bg-brand-blue px-6 pt-12 pb-10 text-brand-white lg:px-[75px]">
+        <footer className="rounded-t-[60px] bg-brand-blue pt-12 pb-10 text-brand-white xl:px-[106px] px-[2.5rem]">
 
             <div className="flex flex-col items-start justify-between gap-8 pb-8 md:flex-row md:items-center">
                 <NavLinks

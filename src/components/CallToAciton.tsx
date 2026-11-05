@@ -3,7 +3,7 @@ import Button from "./Button"
 const CallToAciton = () => {
     return (
         <section>
-            <div className="mb-[var(--space-bottom)] py-[100px] flex max-w-[var(--max-width)] flex-col items-center justify-center gap-[30px] text-center">
+            <div className="mb-[var(--space-bottom)] py-[100px] flex max-w-[var(--max-width)] flex-col items-center justify-center gap-[30px] text-center mx-[2.5rem] xl:mx-[75px]">
                 <h2 className="text-(length:--font-size-heading2) leading-[120%] text-brand-dark">Run Your Business with a clear view</h2>
                 <p className="text-brand-gray text-(length:--font-size-paragraph) leading-[150%]">
                     start free for 30 days. Add your shops and stock, then <br /> invite your team when you’re ready

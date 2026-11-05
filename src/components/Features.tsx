@@ -3,7 +3,7 @@ import FeatureCard, { features } from './FeatureCard';
 
 const Features = () => {
     return (
-        <section id="features" className="flex flex-col items-center justify-center mb-[var(--space-bottom)] px-[106px]">
+        <section id="features" className="flex flex-col items-center justify-center mb-[var(--space-bottom)] xl:px-[106px] px-[2.5rem]">
             <div className="flex items-center justify-between w-full mb-[97px]">
                 <h2 className="text-[52px] text-brand-dark leading-[120%]">Everything you need <br></br> for your Business</h2>
                 <p className="text-brand-gray text-(length:--font-size-paragraph) leading-[150%] self-start">Powerful modules that work together to keep your <br></br> stock accurate</p>

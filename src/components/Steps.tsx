@@ -6,7 +6,7 @@ const Steps = () => {
     const rightSteps = steps.slice(2);
 
     return (
-        <section id="how it works" className="flex flex-col items-center justify-center mb-[var(--space-bottom)] px-[106px] 
+        <section id="how it works" className="flex flex-col items-center justify-center mb-[var(--space-bottom)] xl:px-[106px] px-[2.5rem]
         bg-[var(--color-lightBlue)] rounded-tl-containerCard rounded-br-containerCard">
             <div className="flex items-center justify-between w-full mt-[120px] mb-[97px]">
                 <h2 className="text-[52px] text-brand-dark leading-[120%]">Steps to Control Your <br></br> Stock Effortless</h2>

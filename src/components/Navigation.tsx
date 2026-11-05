@@ -33,11 +33,13 @@ const Navigation = () => {
                     onClick={() => setIsOpen((prev) => !prev)}
                     className="xl:hidden"
                 />
+
             </div>
 
             {/* Menyu ya mobile */}
+
             <div
-                className={`absolute top-full left-0 z-50 w-full overflow-hidden bg-white transition-all duration-300 xl:hidden ${isOpen ? 'h-[500px] border-b border-brand-border' : 'max-h-0'
+                className={`w-full overflow-hidden bg-white transition-all duration-300 xl:hidden ${isOpen ? 'h-screen border-b border-brand-border' : 'max-h-0'
                     }`}
             >
                 <div className="flex flex-col justify-between px-[2.5rem] h-full pb-[2.5rem]">

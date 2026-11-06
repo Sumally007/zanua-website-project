@@ -67,7 +67,7 @@ const Navigation = () => {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-brand-border bg-white">
             {/* Safu ya juu */}
-            <div className="mx-[2.5rem] flex h-[88px] items-center justify-between xl:mx-[75px] xl:h-[127px]">
+            <div className="flex h-[88px] items-center justify-between mx-[2rem] md:mx-[2.5rem] xl:mx-[75px] xl:h-[127px]">
                 <img
                     src={mobileLogo}
                     alt="Zanua Logo"
@@ -97,7 +97,7 @@ const Navigation = () => {
                 className={`absolute top-full left-0 w-full overflow-hidden bg-white transition-[height] duration-300 xl:hidden ${isOpen ? 'h-[calc(100dvh-100%)] border-t border-brand-border' : 'h-0'
                     }`}
             >
-                <div className="flex h-full flex-col justify-between overflow-y-auto px-[2.5rem] pt-8 pb-[2.5rem]">
+                <div className="flex h-full flex-col justify-between overflow-y-auto px-[2rem] pt-8 pb-[2.5rem]">
                     <NavLinks
                         className="flex flex-col gap-6 text-[20px]"
                         onItemClick={() => setIsOpen(false)}

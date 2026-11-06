@@ -32,6 +32,13 @@
     --radius-card-price: 30px;
     --radius-card-lg: 80px;
     --radius-card-sm: 40px;
+
+    --radius-rounded-md: 3rem 1rem;
+    --radius-rounded-sm: 1.5rem .5rem;
+
+
+    --max-width-paragraph: 544px;
+    --max-width-heading: 692px;
 }
 
 @layer base {

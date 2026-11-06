@@ -8,9 +8,9 @@ const Steps = () => {
     return (
         <section id="how it works" className="flex flex-col items-center justify-center mb-[var(--space-bottom)] xl:px-[106px] px-[2.5rem]
         bg-[var(--color-lightBlue)] rounded-tl-containerCard rounded-br-containerCard">
-            <div className="flex items-center justify-between w-full mt-[120px] mb-[97px]">
-                <h2 className="text-[52px] text-brand-dark leading-[120%]">Steps to Control Your <br></br> Stock Effortless</h2>
-                <p className="text-brand-gray text-(length:--font-size-paragraph) leading-[150%] self-start">Running Zanua ERP is a seamless, guided experience <br></br> designed to streamline your business operations and <br></br> maximize profitability.</p>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full mt-[120px] mb-[97px]">
+                <h2 className="text-[1.875rem] pr-[10%] lg:text-[52px] md:text-[2.25rem] mb-[30px] lg:mb-0 text-brand-dark xl:leading-[120%] max-w-heading">Steps to Control Your Stock Effortless</h2>
+                <p className="text-brand-gray text-[1rem] lg:text-(length:--font-size-paragraph) leading-[150%] self-start max-w-paragraph">Running Zanua ERP is a seamless, guided experience designed to streamline your business operations and maximize profitability.</p>
             </div>
 
             <div className="flex justify-between items-center gap-[40px] w-full mb-[120px]">

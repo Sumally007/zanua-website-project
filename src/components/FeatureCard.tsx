@@ -60,7 +60,7 @@ const FeatureCard: React.FC<Feature> = ({
 }) => {
     return (
         <div
-            className={`card flex flex-col items-center justify-between gap-10 px-6 py-10 lg:flex-row lg:px-[57px] lg:py-[97px] ${bgClass} rounded-tl-card-lg rounded-br-card-lg rounded-tr-card-sm rounded-bl-card-sm`}
+            className={`card flex flex-col items-center justify-between gap-10 px-6 py-10 md:flex-row lg:px-[57px] lg:py-[97px] ${bgClass} rounded-rounded-sm md:rounded-rounded-md lg:rounded-tl-card-lg lg:rounded-br-card-lg lg:rounded-tr-card-sm lg:rounded-bl-card-sm`}
         >
             <div className="flex w-full flex-col lg:w-[490px]">
                 <h3 className="mb-[47px] text-[42px]">{title}</h3>

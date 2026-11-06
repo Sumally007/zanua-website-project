@@ -13,7 +13,7 @@ const Steps = () => {
                 <p className="text-brand-gray text-[1rem] lg:text-(length:--font-size-paragraph) leading-[150%] self-start max-w-paragraph">Running Zanua ERP is a seamless, guided experience designed to streamline your business operations and maximize profitability.</p>
             </div>
 
-            <div className="flex justify-between items-center gap-[40px] w-full mb-[120px]">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-[40px] w-full mb-[120px]">
                 <div className="flex flex-col justify-between items-center gap-6">
                     {leftSteps.map((step, index) => (
                         <StepCard key={index} {...step} />

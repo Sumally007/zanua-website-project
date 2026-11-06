@@ -29,10 +29,10 @@ export const testimonialData: TestimonialCardProps[] = [
 // card component
 const TestimanialCard: React.FC<TestimonialCardProps> = ({ logoSrc, comments, userName, userRole, profilePicture, displayImage }) => {
     return (
-        <div className={`card flex justify-between gap-10 rounded-tl-card-lg rounded-br-card-lg rounded-tr-card-sm rounded-bl-card-sm bg-[#E8EEFA] w-full`}>
+        <div className={`card flex flex-col items-stretch justify-between gap-8 lg:gap-10 md:flex-row rounded-rounded-sm md:rounded-rounded-md lg:rounded-tl-card-lg lg:rounded-br-card-lg lg:rounded-tr-card-sm lg:rounded-bl-card-sm bg-[#E8EEFA]`}>
             <div className="flex-1 flex-col py-[67px] pl-[50px]">
                 <img src={logoSrc} alt="" className='w-[130px] h-[72px] mb-[62px]' />
-                <p className='mb-[62px] text-[36px] w-[466px]'>{comments}</p>
+                <p className='mb-[62px] text-[30px] lg:text-[36px] mx-w-[466px]'>{comments}</p>
                 <div className='flex items-center gap-[28px]'>
                     <img src={profilePicture} alt="" className=' w-[110px] h-[110px]' />
                     <div className='flex flex-col justify-between items-start gap-[18px]'>
@@ -41,8 +41,8 @@ const TestimanialCard: React.FC<TestimonialCardProps> = ({ logoSrc, comments, us
                     </div>
                 </div>
             </div>
-            <div className="flex-1 overflow-hidden">
-                <img src={displayImage} alt="" className='w-full h-full' />
+            <div className="flex-1 overflow-hidden self-stretch">
+                <img src={displayImage} alt="" className=' w-full h-full object-cover overflow-hidden' />
             </div>
         </div>
     )

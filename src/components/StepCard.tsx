@@ -34,9 +34,9 @@ export const steps: Step[] = [
 const StepCard: React.FC<Step> = ({ number, title, description }) => {
     return (
         <div className="rounded-2xl border border-[#E2E8F0] bg-white p-[19px] max-w-[350.12px]">
-            <h4 className="text-[24px] text-brand-blue mb-[36px]">{number}</h4>
-            <h4 className="text-[24px] mb-[24px] text-brand-dark">{title}</h4>
-            <p className="text-(length:--font-size-paragraph) text-brand-gray leading-[138%]">{description}</p>
+            <h4 className="text-[20px] lg:text-[24px] text-brand-blue mb-[36px]">{number}</h4>
+            <h4 className="text-[20px] lg:text-[24px] mb-[24px] text-brand-dark">{title}</h4>
+            <p className="text-[1rem] lg:text-(length:--font-size-paragraph) text-brand-gray leading-[138%]">{description}</p>
         </div>
     )
 }

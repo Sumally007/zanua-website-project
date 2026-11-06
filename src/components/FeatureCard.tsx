@@ -60,15 +60,15 @@ const FeatureCard: React.FC<Feature> = ({
 }) => {
     return (
         <div
-            className={`card flex flex-col items-center justify-between gap-10 px-6 py-10 md:flex-row lg:px-[57px] lg:py-[97px] ${bgClass} rounded-rounded-sm md:rounded-rounded-md lg:rounded-tl-card-lg lg:rounded-br-card-lg lg:rounded-tr-card-sm lg:rounded-bl-card-sm`}
+            className={`card flex flex-col items-center justify-between gap-8 lg:gap-10 px-6 py-10 md:flex-row lg:px-[57px] lg:py-[97px] ${bgClass} rounded-rounded-sm md:rounded-rounded-md lg:rounded-tl-card-lg lg:rounded-br-card-lg lg:rounded-tr-card-sm lg:rounded-bl-card-sm`}
         >
             <div className="flex w-full flex-col lg:w-[490px]">
-                <h3 className="mb-[47px] text-[42px]">{title}</h3>
+                <h3 className="mb-[47px] text-[2.25rem] xl:text-[42px]">{title}</h3>
 
                 {paragraphs.map((text, index) => (
                     <p
                         key={index}
-                        className="mb-[40px] text-brand-gray text-(length:--font-size-paragraph) leading-[148%]"
+                        className="mb-[40px] text-brand-gray text-[1rem] lg:text-(length:--font-size-paragraph) leading-[148%]"
                     >
                         {text}
                     </p>
@@ -76,7 +76,7 @@ const FeatureCard: React.FC<Feature> = ({
 
                 <a
                     href={href}
-                    className="group inline-flex items-center gap-2 self-start pt-2 text-[18px] font-semibold text-black hover:underline"
+                    className="group inline-flex items-center gap-2 self-start pt-2 text-[1rem] lg:text-[18px] font-semibold text-black hover:underline"
                 >
                     Learn more
                     <FaArrowRightLong className="h-[24px] w-[38.88px] transition-transform group-hover:translate-x-1" />

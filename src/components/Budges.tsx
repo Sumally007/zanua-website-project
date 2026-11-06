@@ -16,10 +16,10 @@ const logoItems: LogoItem[] = [
 
 const Budges: React.FC = () => {
     return (
-        <section className='flex justify-center items-center h-[186px] bg-lightBlue mb-[var(--space-bottom)]'>
-            <div className='flex items-center justify-between w-[722px] '>
+        <section className='flex justify-center items-center h-[186px] bg-lightBlue mb-[var(--space-bottom)] px-[2rem] md:px-[2.5rem]'>
+            <div className='flex items-center justify-between w-full max-w-[722px] '>
                 {logoItems.map((item) => (
-                    <img key={item.id} src={item.src} alt={item.alt} />
+                    <img key={item.id} src={item.src} alt={item.alt} className='w-[70px] sm:w-[90px] md:w-[120px] lg:w-[140px] h-auto object-contain' />
                 ))}
             </div>
         </section>

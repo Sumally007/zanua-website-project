@@ -60,10 +60,10 @@ const FeatureCard: React.FC<Feature> = ({
 }) => {
     return (
         <div
-            className={`card flex flex-col md:items-stretch items-stretch justify-between gap-8 lg:gap-10 px-0 py-0 md:px-6 md:py-10 md:flex-row lg:px-[57px] lg:py-[97px] ${bgClass} rounded-rounded-sm md:rounded-rounded-md lg:rounded-tl-card-lg lg:rounded-br-card-lg lg:rounded-tr-card-sm lg:rounded-bl-card-sm`}
+            className={`card flex flex-col items-stretch md:items-center justify-between px-0 py-0 gap-[2.5rem] lg:gap-[3rem] xl:gap-[4rem] md:px-6 md:py-10 md:flex-row lg:px-[57px] lg:py-[97px] ${bgClass} rounded-rounded-sm md:rounded-rounded-md lg:rounded-tl-card-lg lg:rounded-br-card-lg lg:rounded-tr-card-sm lg:rounded-bl-card-sm overflow-hidden`}
         >
-            <div className="flex w-full flex-col lg:w-[490px] px-6 py-10">
-                <h3 className="mb-[47px] text-[2.25rem] xl:text-[42px]">{title}</h3>
+            <div className="flex-1 w-full flex-col px-6 py-10 lg:p-0">
+                <h3 className="mb-[47px] text-[1.25rem] md:text-[2rem] lg:text-[42px]">{title}</h3>
 
                 {paragraphs.map((text, index) => (
                     <p
@@ -83,8 +83,8 @@ const FeatureCard: React.FC<Feature> = ({
                 </a>
             </div>
 
-            <div className='relative w-full aspect-[4/4] sm:aspect-[4/4] md:aspect-auto md:flex-1 md:min-h-[300px] rounded-[20px] overflow-hidden'>
-                <img src={image} alt={imageAlt} className='absolute inset-0 w-full h-full object-cover' />
+            <div className='flex-1 w-full h-full  overflow-hidden'>
+                <img src={image} alt={imageAlt} className='w-full h-full lg:w-[354px] lg:h-[354px] xl:w-[448px] xl:h-[448px]  object-cover self-stretch md:justify-self-end md:rounded-[20px]' />
             </div>
         </div>
     )

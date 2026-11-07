@@ -32,12 +32,12 @@ const TestimanialCard: React.FC<TestimonialCardProps> = ({ logoSrc, comments, us
         <div className={`card flex flex-col items-stretch justify-between gap-8 lg:gap-10 md:flex-row rounded-rounded-sm md:rounded-rounded-md lg:rounded-tl-card-lg lg:rounded-br-card-lg lg:rounded-tr-card-sm lg:rounded-bl-card-sm bg-[#E8EEFA] overflow-hidden`}>
             <div className="flex-1 flex-col px-6 py-10 md:py-[67px] md:pl-[50px]">
                 <img src={logoSrc} alt="" className='w-[130px] h-[72px] mb-[62px]' />
-                <p className='mb-[62px] text-[30px] lg:text-[36px] mx-w-[466px]'>{comments}</p>
+                <p className='mb-[62px] sm:text-[1.125rem] md:text-[30px] lg:text-[36px] mx-w-[466px]'>{comments}</p>
                 <div className='flex items-center gap-[28px]'>
                     <img src={profilePicture} alt="" className=' w-[110px] h-[110px]' />
                     <div className='flex flex-col justify-between items-start gap-[18px]'>
-                        <p className='text-[18px]'>{userName}</p>
-                        <p className='text-[16px] text-brand-gray'>{userRole}</p>
+                        <p className='text-[1rem] md:text-[18px]'>{userName}</p>
+                        <p className='text-[0.875rem] md:text-[16px] text-brand-gray'>{userRole}</p>
                     </div>
                 </div>
             </div>
@@ -48,4 +48,4 @@ const TestimanialCard: React.FC<TestimonialCardProps> = ({ logoSrc, comments, us
     )
 }
 
-export default TestimanialCard
+export default TestimanialCard;

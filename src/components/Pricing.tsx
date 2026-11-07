@@ -6,9 +6,9 @@ const Pricing = () => {
             id="pricing"
             className="mb-[var(--space-bottom)] bg-lightBlue xl:px-[106px] px-[2.5rem] py-[100px]"
         >
-            <div className="mb-[74px] flex w-full items-center justify-between gap-10">
-                <h2 className="text-(length:--font-size-heading2) leading-[120%] text-brand-dark">Simple pricing</h2>
-                <p className="text-brand-gray text-(length:--font-size-paragraph) leading-[150%]">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between  w-full mb-[97px]">
+                <h2 className="text-[1.875rem] pr-[8%] lg:text-[52px] md:text-[2.25rem] mb-[30px] lg:mb-0 text-brand-dark xl:leading-[120%] max-w-heading">Simple pricing</h2>
+                <p className="text-brand-gray text-[1rem] lg:text-(length:--font-size-paragraph) max-w-paragraph leading-[150%]">
                     Choose a plan that fits your business size and scale
                 </p>
             </div>

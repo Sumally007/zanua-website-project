@@ -4,7 +4,7 @@ const Pricing = () => {
     return (
         <section
             id="pricing"
-            className="mb-[var(--space-bottom)] bg-lightBlue xl:px-[106px] px-[2.5rem] py-[100px]"
+            className="mb-[var(--space-bottom)] bg-lightBlue xl:px-[106px] px-[2rem] py-[100px]"
         >
             <div className="flex flex-col sm:flex-row sm:items-center justify-between  w-full mb-[97px]">
                 <h2 className="text-[1.875rem] pr-[8%] lg:text-[52px] md:text-[2.25rem] mb-[30px] lg:mb-0 text-brand-dark xl:leading-[120%] max-w-heading">Simple pricing</h2>

@@ -15,12 +15,12 @@ const socials = [
 
 const Footer = () => {
     return (
-        <footer className="rounded-t-[60px] bg-brand-blue pt-12 pb-10 text-brand-white xl:px-[106px] px-[2.5rem]">
+        <footer className="rounded-t-[20px] md:rounded-t-[40px] lg:rounded-t-[60px] bg-brand-blue pt-12 pb-10 text-brand-white xl:px-[106px] px-[2.5rem]">
 
             <div className="flex flex-col items-start justify-between gap-8 pb-8 md:flex-row md:items-center">
                 <NavLinks
                     variant="light"
-                    className="flex flex-wrap items-center gap-x-[80px] gap-y-4 text-[18px]"
+                    className="flex flex-wrap items-center gap-x-[80px] gap-y-4 text-[1rem] sm:text-[18px]"
                 />
 
                 <ul className="flex items-center gap-8">
@@ -52,7 +52,7 @@ const Footer = () => {
 
             <hr className="border-white/15" />
 
-            <div className="flex flex-col gap-3 pt-10 text-[18px] md:flex-row md:items-center md:justify-between">
+            <div className="flex flex-col gap-3 pt-10 text-[1rem] sm:text-[18px] md:flex-row md:items-center md:justify-between">
                 <p>© 2026 Zanua Technologies. All rights reserved.</p>
                 <p>Developed by Ismail Mbarouk.</p>
             </div>

@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="flex flex-col items-start justify-between gap-8 pb-8 md:flex-row md:items-center">
                 <NavLinks
                     variant="light"
-                    className="flex flex-wrap items-center gap-x-[40px] md:gap-x-[80px] gap-y-4 text-[1rem] sm:text-[18px]"
+                    className="flex flex-wrap items-center gap-x-[20px] md:gap-x-[80px] gap-y-4 text-[1rem] sm:text-[18px]"
                 />
 
                 <ul className="flex items-center gap-8">

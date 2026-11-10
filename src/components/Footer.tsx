@@ -52,7 +52,7 @@ const Footer = () => {
 
             <hr className="border-white/15" />
 
-            <div className="flex flex-col gap-3 pt-10 text-[1rem] sm:text-[18px] md:flex-row md:items-center md:justify-between">
+            <div className="flex flex-col items-center gap-3 pt-10 text-[1rem] sm:text-[18px] md:flex-row md:items-center md:justify-between">
                 <p>© 2026 Zanua Technologies. All rights reserved.</p>
                 <p>Developed by Ismail Mbarouk.</p>
             </div>

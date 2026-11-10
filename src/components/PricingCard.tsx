@@ -70,17 +70,17 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 }`}
         >
             <div className="flex items-center justify-between">
-                <p className="text-(length:--font-size-paragraph) font-semibold">{planName}</p>
+                <p className="text-[18px] lg:text-(length:--font-size-paragraph) font-semibold">{planName}</p>
                 <Icon className={`h-[24px] w-[27px] ${highlighted ? 'text-brand-white' : 'text-brand-blue'}`} />
             </div>
 
-            <h2 className="text-(length:--font-size-headingPrice) mt-6">
+            <h2 className="text-[36px] lg:text-(length:--font-size-headingPrice) mt-6">
                 ${monthlyPrice}
-                <span className={`text-[28px] font-normal ${highlighted ? 'text-brand-white' : 'text-brand-gray'}`}>
+                <span className={`text-[22px] lg:text-[28px] font-normal ${highlighted ? 'text-brand-white' : 'text-brand-gray'}`}>
                     /mo
                 </span>
             </h2>
-            <p className={`mt-3 text-(length:--font-size-paragraph) ${highlighted ? 'text-brand-white' : 'text-brand-gray'}`}>
+            <p className={`mt-3 text-[18px] lg:text-(length:--font-size-paragraph) ${highlighted ? 'text-brand-white' : 'text-brand-gray'}`}>
                 or ${yearlyPrice} yearly
             </p>
 
@@ -93,12 +93,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
             <hr className={`mt-6 ${highlighted ? 'border-[#2A4A8F]' : 'border-[#E2E8F0]'}`} />
 
-            <p className="mt-10 mb-6 text-(length:--font-size-paragraph)">Includes:</p>
+            <p className="mt-10 mb-6 text-[18px] lg:text-(length:--font-size-paragraph)">Includes:</p>
             <ul className="flex flex-col gap-4">
                 {features.map((feature) => (
                     <li
                         key={feature}
-                        className={`flex items-center gap-3 text-(length:--font-size-priceList) ${highlighted ? 'ttext-brand-white' : 'text-brand-gray'}`}
+                        className={`flex items-center gap-3 text-[1rem] md:text-(length:--font-size-priceList) ${highlighted ? 'ttext-brand-white' : 'text-brand-gray'}`}
                     >
                         <FaRegCheckCircle
                             className={`shrink-0 text-[20px] ${highlighted ? 'text-brand-white' : 'text-brand-blue'}`}
